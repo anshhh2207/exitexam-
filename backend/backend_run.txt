@@ -1,0 +1,143 @@
+
+> backend@1.0.0 dev
+> npx nodemon --watch . --exec node app.js
+
+[33m[nodemon] 3.1.13[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node app.js`[39m
+(node:7624) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7624) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+DB connection error connect ECONNREFUSED 127.0.0.1:27017
+Started in-memory MongoDB at mongodb://127.0.0.1:52286/
+DB connected to in-memory MongoDB
+Server is up and running on 0.0.0.0:5000
+SyntaxError: Bad escaped character in JSON at position 8 (line 1 column 9)
+    at JSON.parse (<anonymous>)
+    at parse (d:\anshika\backend\node_modules\body-parser\lib\types\json.js:92:19)
+    at d:\anshika\backend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (d:\anshika\backend\node_modules\raw-body\index.js:238:16)
+    at done (d:\anshika\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (d:\anshika\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-02-20T09:55:21.694Z POST /api/register
+Body: {
+  name: 'Test User',
+  email: 'testuser_1771581321621@example.com',
+  password: 'secret123',
+  confirmPassword: 'secret123'
+}
+Register payload: {
+  name: 'Test User',
+  email: 'testuser_1771581321621@example.com',
+  password: 'secret123',
+  confirmPassword: 'secret123'
+}
+2026-02-20T09:59:21.840Z GET /api/me
+2026-02-20T09:59:21.850Z GET /api/me
+2026-02-20T09:59:30.846Z POST /api/login
+Body: { email: 'anshi@gmail.com', password: 'anshi' }
+2026-02-20T09:59:34.829Z POST /api/login
+Body: { email: 'anshi@gmail.com', password: 'anshi' }
+2026-02-20T09:59:47.884Z POST /api/register
+Body: {
+  name: 'anshi',
+  email: 'anshi@gmail.com',
+  password: 'anshi',
+  confirmPassword: 'anshi'
+}
+Register payload: {
+  name: 'anshi',
+  email: 'anshi@gmail.com',
+  password: 'anshi',
+  confirmPassword: 'anshi'
+}
+2026-02-20T09:59:57.053Z POST /api/register
+Body: {
+  name: 'anshi',
+  email: 'anshi@gmail.com',
+  password: 'anshika',
+  confirmPassword: 'anshika'
+}
+Register payload: {
+  name: 'anshi',
+  email: 'anshi@gmail.com',
+  password: 'anshika',
+  confirmPassword: 'anshika'
+}
+2026-02-20T09:59:57.175Z GET /api/tasks
+2026-02-20T09:59:57.192Z GET /api/tasks
+2026-02-20T10:00:31.891Z POST /api/tasks
+Body: { title: 'attend meeting', description: 'today 3pm' }
+2026-02-20T10:01:29.966Z GET /api/me
+2026-02-20T10:01:29.972Z GET /api/me
+2026-02-20T10:01:36.386Z POST /api/logout
+Body: {}
+2026-02-20T10:01:44.251Z POST /api/login
+Body: { email: 'anshi@gmail.com', password: 'anshika' }
+2026-02-20T10:01:44.348Z GET /api/tasks
+2026-02-20T10:01:44.357Z GET /api/tasks
+2026-02-20T10:01:53.524Z PUT /api/tasks/699830bf1c447c873d561ed2
+Body: { completed: true }
+2026-02-20T10:01:54.922Z PUT /api/tasks/699830bf1c447c873d561ed2
+Body: { completed: false }
+2026-02-20T10:07:59.363Z GET /api/me
+2026-02-20T10:07:59.374Z GET /api/me
+2026-02-20T10:07:59.391Z GET /api/tasks
+2026-02-20T10:07:59.401Z GET /api/tasks
+2026-02-20T10:08:03.879Z GET /api/me
+2026-02-20T10:08:03.889Z GET /api/me
+2026-02-20T10:08:03.900Z GET /api/tasks
+2026-02-20T10:08:03.908Z GET /api/tasks
+2026-02-20T10:08:04.217Z GET /api/me
+2026-02-20T10:08:04.227Z GET /api/me
+2026-02-20T10:08:04.238Z GET /api/tasks
+2026-02-20T10:08:04.247Z GET /api/tasks
+2026-02-20T10:08:04.464Z GET /api/me
+2026-02-20T10:08:04.470Z GET /api/me
+2026-02-20T10:08:04.482Z GET /api/tasks
+2026-02-20T10:08:04.490Z GET /api/tasks
+2026-02-20T10:09:13.468Z GET /api/me
+2026-02-20T10:09:13.479Z GET /api/me
+2026-02-20T10:09:13.501Z GET /api/tasks
+2026-02-20T10:09:13.513Z GET /api/tasks
+2026-02-20T10:09:13.558Z GET /api/me
+2026-02-20T10:09:13.567Z GET /api/me
+2026-02-20T10:09:13.585Z GET /api/tasks
+2026-02-20T10:09:13.593Z GET /api/tasks
+2026-02-20T10:09:16.704Z GET /api/me
+2026-02-20T10:09:16.714Z GET /api/me
+2026-02-20T10:09:16.732Z GET /api/tasks
+2026-02-20T10:09:16.742Z GET /api/tasks
+2026-02-20T10:09:17.827Z GET /api/me
+2026-02-20T10:09:17.837Z GET /api/me
+2026-02-20T10:09:18.932Z GET /api/me
+2026-02-20T10:09:18.940Z GET /api/me
+2026-02-20T10:09:19.954Z GET /api/me
+2026-02-20T10:09:19.964Z GET /api/me
+2026-02-20T10:09:46.795Z POST /api/tasks
+Body: {
+  title: 'meeting',
+  description: 'today 3pm',
+  dueDate: '2026-02-20',
+  priority: 'Medium',
+  status: 'In Progress'
+}
+2026-02-20T10:09:46.822Z GET /api/tasks
+2026-02-20T10:09:46.829Z GET /api/tasks
+2026-02-20T10:09:55.145Z DELETE /api/tasks/699832ea1c447c873d561efb
+Body: {}
+2026-02-20T10:10:06.609Z GET /api/tasks
+2026-02-20T10:10:06.618Z GET /api/tasks
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node app.js`[39m
+(node:3292) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3292) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+^C^C
